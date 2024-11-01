@@ -1,0 +1,20 @@
+# Deklarasi variabel
+PersenTunjangan = 0.2
+PersenPajak = 0.15
+
+# Input nama karyawan dan gaji pokok
+NamaKaryawan = input("Masukkan nama karyawan: ")
+GajiPokok = float(input("Masukkan gaji pokok: "))
+
+# Hitung tunjangan
+tunjangan = PersenTunjangan * GajiPokok
+
+# Hitung pajak
+pajak = PersenPajak * (GajiPokok + tunjangan)
+
+# Hitung gaji bersih
+GajiBersih = GajiPokok + tunjangan - pajak
+
+# Cetak hasil
+print("Nama Karyawan:", NamaKaryawan)
+print("Gaji Bersih:", GajiBersih)
